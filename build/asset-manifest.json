@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cd02bb2b.css",
+    "main.js": "/static/js/main.10588827.js",
+    "static/js/496.35aea930.chunk.js": "/static/js/496.35aea930.chunk.js",
+    "static/media/me_pic.png": "/static/media/me_pic.db087567c436dea4b253.png",
+    "static/media/coin-rocket.svg": "/static/media/coin-rocket.4181d0c03e713e527f865d37939da63a.svg",
+    "static/media/Coin-Logov2.svg": "/static/media/Coin-Logov2.44b082ca8ad38bcc894c8349aa8b44f3.svg",
+    "static/media/bnb-cat.svg": "/static/media/bnb-cat.44b082ca8ad38bcc894c8349aa8b44f3.svg",
+    "static/media/coins.svg": "/static/media/coins.a028aa179d79d171e2d630c6d620d883.svg",
+    "static/media/telegram.svg": "/static/media/telegram.1f083f31b88ef3206fdd668255da418d.svg",
+    "static/media/swap-white.svg": "/static/media/swap-white.fbbcf50194de8535fd5524ab6ea5731c.svg",
+    "static/media/twitter.svg": "/static/media/twitter.cd2d435a2378a3580d4338f7f68188b2.svg",
+    "static/media/currency.svg": "/static/media/currency.0ef6232b6ed9410a39cef396ad507679.svg",
+    "static/media/chevron-right.svg": "/static/media/chevron-right.08683339a604ef8fcd64b10d01f2ea89.svg",
+    "static/media/pancake.svg": "/static/media/pancake.5062e56b5640621a9afdc9b3ac75be54.svg",
+    "static/media/rocket3.svg": "/static/media/rocket3.2254f2694da055ece773900f667e4f61.svg",
+    "index.html": "/index.html",
+    "static/media/claim-coin.svg": "/static/media/claim-coin.0ebc8f2d2c0fa5173ba46190793ab6c1.svg",
+    "static/media/bnb.svg": "/static/media/bnb.b612f1402147c92338bed5af1879b175.svg",
+    "static/media/fire5.svg": "/static/media/fire5.8abdb75f808eabf803059e52506230ac.svg",
+    "static/media/vote.svg": "/static/media/vote.d9733f53741a07389ca9785431143291.svg",
+    "static/media/metamask.svg": "/static/media/metamask.9807502c8362b0cf3f1e09f07f0322ab.svg",
+    "static/media/background-item-6.svg": "/static/media/background-item-6.a1150ce5bd7e2c8274ce7a91c4931497.svg",
+    "static/media/background-item-7.svg": "/static/media/background-item-7.cf1116e4641b0e5d6547e21e03ef5d37.svg",
+    "main.cd02bb2b.css.map": "/static/css/main.cd02bb2b.css.map",
+    "main.10588827.js.map": "/static/js/main.10588827.js.map",
+    "496.35aea930.chunk.js.map": "/static/js/496.35aea930.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd02bb2b.css",
+    "static/js/main.10588827.js"
+  ]
+}

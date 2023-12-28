@@ -1,0 +1,189 @@
+import React from "react";
+import chevronRight from "./images/chevron-right.svg";
+import coin from "./images/coin-rocket.svg";
+import {Link as LinkR} from 'react-scroll';
+import Claim from "./images/claim-coin.svg";
+import Typical from 'react-typical';
+import axios from 'axios';
+//import { motion } from 'framer-motion';
+
+var contractAddress = "BVFVL6rriPSCT9H5BuH3te56kznEjxXUqKRqaAGqjpAx";
+
+class Header_body extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      price: 'Loading...'
+    };
+  }
+
+  componentDidMount() {
+
+    this.startRocketAnimation();
+
+    const options = {
+      method: 'GET',
+      url: 'https://public-api.birdeye.so/public/price?address=BVFVL6rriPSCT9H5BuH3te56kznEjxXUqKRqaAGqjpAx',
+      headers: {'X-API-KEY': 'e65a058fd2d34919ae0f831990eda79b'}
+    };
+
+    axios.request(options)
+      .then((response) => {
+        const priceValue = response.data.data.value;
+        const marketCapValue = priceValue * 9.95e8; // Multiply by .995 billion (???)
+        this.setState({ 
+          price: priceValue.toFixed(8),
+          marketCap: marketCapValue.toLocaleString('en-US', { style: 'currency', currency: 'USD' }) // Format as currency
+        });
+    
+        // New API call for holder count
+        axios.get('API_ENDPOINT')
+          .then((holderResponse) => {
+            const holderCount = holderResponse.data.holderCount;
+            this.setState({ holderCount });
+          })
+          .catch((holderError) => {
+            console.error(holderError);
+            this.setState({ holderCount: 'Unavailable' });
+          });
+    
+      })
+      .catch((error) => {
+        console.error(error);
+        this.setState({ 
+          price: 'Unavailable',
+          marketCap: 'Unavailable',
+          holderCount: 'Unavailable'
+        });
+      });
+  }
+
+  startRocketAnimation() {
+    const rocketElement = document.querySelector('.token_logo');
+
+    const updateRocketPosition = () => {
+      const x = Math.random() * window.innerWidth - window.innerWidth / 2; // Random X translation
+      const y = Math.random() * window.innerHeight - window.innerHeight / 2; // Random Y translation
+      const rotation = Math.random() * 360; // Random rotation
+
+      rocketElement.style.transition = 'transform 5s linear';
+      rocketElement.style.transform = `translate(${x}px, ${y}px) rotate(${rotation}deg)`;
+    };
+
+    setInterval(updateRocketPosition, 2500); // Update rocket position every 2.5 seconds
+  }
+
+
+  render() {
+    
+    return (
+      <div className="header_body">
+        <div className="grid_choose grid-gap--small">
+          <div className="value-proposition">
+            
+            {/* ROCKET TUNA IMAGE */}
+            <embed src={coin} className="token_logo"/> 
+            {/*<embed src={coin} className="token_logo" style={tokenLogoStyle} />*/}
+
+            {/* WISH YOU GOT INTO ____ ? */}
+            <p className="value-proposition__text text text--small text--regular">
+              Wish you got into <Typical className="typical"
+                steps={['DOGE', 1500, 'BONK', 1500, 'MYRO', 1500, 'SAMO', 1500, 'LEIA', 1500, 'WIF', 1500]}
+                loop={Infinity}
+                wrapper="p"
+              /> early?</p>
+
+            {/* GREAT, BECAUSE... */}
+            <p>
+              Then it's the <b>perfect</b> time to give <b>Tuna, Solana's #1 Chiweenie</b> (chihuahua-wiener mix) his forever home!
+            </p>
+            <p>  
+              Tuna has LAUNCHED! <a href="https://dexscreener.com/solana/BVFVL6rriPSCT9H5BuH3te56kznEjxXUqKRqaAGqjpAx">DEXScreener</a>
+              <br></br>It's time to adopt some Tunas!
+            </p>
+            
+            {/* TOP MAIN HEADER */}
+            <h2 className="value-proposition__title">
+              Tuna Time! ⏰
+            </h2>
+
+            {/* COIN STATS CONTAINER */}
+            <div className="badge-container-add">
+              <span className="badge-add badge--dark-add text--small">
+                Token Address:
+              </span>
+              
+              <span onClick={() => {navigator.clipboard.writeText(contractAddress)}} className="text text--small text--regular text--white badge-add2">
+                {contractAddress}
+              </span>  
+            </div>
+            
+            <div className="badge-container-hold">
+              <span className="badge-hold badge--dark-hold text--small">
+                Holders:
+              </span>
+              
+              <span className="text text--small text--regular text--white badge-hold2">
+                {this.state.holders}
+              </span>
+            </div>
+            
+            {/* Coin Price */}
+            <div className="badge-container-price">
+                <span className="badge-hold badge--dark-hold text--small">
+                  Price:
+                </span>
+                <span className="text text--small text--regular text--white badge-hold2">
+                  $ {this.state.price}
+                  {/*${this.state.price}*/}
+                </span>
+            </div>
+
+            {/* Market Cap */}
+            <div className="badge-container-market-cap">
+                <span className="badge-hold badge--dark-hold text--small">
+                  Market Cap:
+                </span>
+                <span className="text text--small text--regular text--white badge-hold2">
+                  {this.state.marketCap}
+                  {/*{this.state.marketCap}*/}
+                </span>
+            </div>
+
+            {/* "Buy TUNA" Button */}
+            <LinkR to="buyLink" spy={true} smooth={true}>
+              <button className="value-proposition__button btn btn--flex btn--accent btn-buy" > 
+                <span className="text--standart text--medium text-bold">
+                  How to Buy
+                </span>
+                <div className="chiron-icon-container">
+                  <img src={chevronRight} alt="Right Icon" />
+                </div>
+              </button>
+            </LinkR>
+            
+            {/*
+            <button className="value-proposition__button btn btn--flex btn--accent2 btn-whitepaper">
+              <span className="text--standart text--medium text-bold">Whitepaper</span>
+              <div className="paper-icon-container">
+                <img src={paper} alt="Paper Icon" />
+              </div>
+            </button>
+            */}
+            {/*
+            <button className="value-proposition__button btn btn--flex btn--accent btn-whitepaper btn-free">
+              <span className="text--standart text--medium">Free Tokens</span>
+              <div className="paper-icon-container">
+                <img src={Claim} alt="Claim Icon" />
+              </div>
+            </button>
+            */}
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Header_body;

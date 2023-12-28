@@ -1,0 +1,22 @@
+{
+    "functions": {
+      "api/openai.js": {
+        "maxDuration": 59
+      },
+      "api/chat.js": {
+        "maxDuration": 59
+      },
+      "api/dalle.js": {
+        "maxDuration": 59
+      },
+      "api/router.js": {
+        "maxDuration": 59
+      },
+      "api/router_myro.js": {
+        "maxDuration": 59
+      },
+      "api/tunaBalance.js": {
+        "maxDuration": 59
+      }
+    }
+  }
