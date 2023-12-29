@@ -16,8 +16,8 @@ export function ConnectMeta() {
           <button className="btn btn--accent2 text--small text--medium btn-top-connect" onClick={() => deactivate()}>Disconnect</button>
         </div>
         {account && <p className="text-dapp"><p className="badge text--small text-dapp-header">Account:</p> {account}</p>}
-        {etherBalance && <p className="text-dapp"><p className="badge text--small text-dapp-header">Balance:</p> {formatEther(ecatBalance)} TUNA</p>}
-        <p className='text title'>Tuna to Put Down:</p>
+        {etherBalance && <p className="text-dapp"><p className="badge text--small text-dapp-header">Balance:</p> {formatEther(ecatBalance)} tokens</p>}
+        <p className='text title'>Burn Amount:</p>
         <input type='text'></input><span className='vertical-line' />
         <button className="btn btn--accent2 text--small text--medium btn-top-burn btn-dapp-use" onClick={() => deactivate()}><img src={fire} className="burn-img" alt="fire svg" />Burn</button>
       </div>

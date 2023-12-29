@@ -13,8 +13,8 @@ export function ConnectMeta() {
           <button className="btn btn--accent2 text--small text--medium btn-top-connect" onClick={() => deactivate()}>Disconnect</button>
         </div>
         {account && <p className="text-dapp"><p className="badge text--small text-dapp-header">Account:</p> {account}</p>}
-        <p className='text-dapp-header'>Check if Tuna has left any 'surprises' 💩 in your wallet:</p><p className='text'></p>
-        <button className="btn btn--accent2 text--small text--medium btn-top-burn btn-dapp-use"><img src={Claim} className="burn-img" alt="fire svg" />Check for Tuna Poopies</button>
+        <p className='text-dapp-header'>Check Account:</p><p className='text'></p>
+        <button className="btn btn--accent2 text--small text--medium btn-top-burn btn-dapp-use"><img src={Claim} className="burn-img" alt="fire svg" />Check</button>
       </div>
     )
 }

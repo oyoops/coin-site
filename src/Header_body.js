@@ -7,7 +7,16 @@ import Typical from 'react-typical';
 import axios from 'axios';
 //import { motion } from 'framer-motion';
 
-var contractAddress = "BVFVL6rriPSCT9H5BuH3te56kznEjxXUqKRqaAGqjpAx";
+
+const TOKEN_ADDRESS = process.env.TOKEN_ADDRESS;
+
+const MAIN_SLOGAN_P1 = `Then it's the <b>perfect</b> time to give <b>Tuna, Solana's #1 Chiweenie</b> (chihuahua-wiener mix) his forever home!`;
+const MAIN_SLOGAN_P2 = `Tuna has LAUNCHED!`;
+const MAIN_SLOGAN_DEXSCREENER_LINK_TEXT = "DEXScreener"
+const MAIN_SLOGAN_P3 = `It's time to adopt some Tunas!`;
+
+const MAIN_SLOGAN_HOOK = `Tuna Time! ⏰`;
+
 
 class Header_body extends React.Component {
 
@@ -24,7 +33,7 @@ class Header_body extends React.Component {
 
     const options = {
       method: 'GET',
-      url: 'https://public-api.birdeye.so/public/price?address=BVFVL6rriPSCT9H5BuH3te56kznEjxXUqKRqaAGqjpAx',
+      url: `https://public-api.birdeye.so/public/price?address=${TOKEN_ADDRESS}`,
       headers: {'X-API-KEY': 'e65a058fd2d34919ae0f831990eda79b'}
     };
 
@@ -82,7 +91,7 @@ class Header_body extends React.Component {
         <div className="grid_choose grid-gap--small">
           <div className="value-proposition">
             
-            {/* ROCKET TUNA IMAGE */}
+            {/* MAIN TOKEN IMAGE */}
             <embed src={coin} className="token_logo"/> 
             {/*<embed src={coin} className="token_logo" style={tokenLogoStyle} />*/}
 
@@ -96,16 +105,18 @@ class Header_body extends React.Component {
 
             {/* GREAT, BECAUSE... */}
             <p>
-              Then it's the <b>perfect</b> time to give <b>Tuna, Solana's #1 Chiweenie</b> (chihuahua-wiener mix) his forever home!
+              {`${MAIN_SLOGAN_P1}`}
             </p>
             <p>  
-              Tuna has LAUNCHED! <a href="https://dexscreener.com/solana/BVFVL6rriPSCT9H5BuH3te56kznEjxXUqKRqaAGqjpAx">DEXScreener</a>
-              <br></br>It's time to adopt some Tunas!
+              {`${MAIN_SLOGAN_P2}`}
+              <a href={`https://dexscreener.com/solana/${TOKEN_ADDRESS}`}>{`${MAIN_SLOGAN_DEXSCREENER_LINK_TEXT}`}</a>
+              <br></br>
+              {`${MAIN_SLOGAN_P3}`}
             </p>
             
             {/* TOP MAIN HEADER */}
             <h2 className="value-proposition__title">
-              Tuna Time! ⏰
+              {`${MAIN_SLOGAN_HOOK}`}
             </h2>
 
             {/* COIN STATS CONTAINER */}
@@ -114,8 +125,8 @@ class Header_body extends React.Component {
                 Token Address:
               </span>
               
-              <span onClick={() => {navigator.clipboard.writeText(contractAddress)}} className="text text--small text--regular text--white badge-add2">
-                {contractAddress}
+              <span onClick={() => {navigator.clipboard.writeText(TOKEN_ADDRESS)}} className="text text--small text--regular text--white badge-add2">
+                {TOKEN_ADDRESS}
               </span>  
             </div>
             

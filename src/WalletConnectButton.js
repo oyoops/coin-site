@@ -18,7 +18,7 @@ const WalletConnectButton = () => {
     const fetchBalance = async () => {
         try {
             const connection = new Connection("https://api.mainnet-beta.solana.com/");
-            const tokenPublicKey = new PublicKey("5dPFGRmgA9PdD3YTYCDnkbfRu4MBEEUL5akev5E7PAJZ");
+            const tokenPublicKey = new PublicKey(`${process.env.TOKEN_ADDRESS}`);
             const accountInfo = await connection.getParsedAccountInfo(tokenPublicKey);
             setBalance(accountInfo.value.data.parsed.info.tokenAmount.uiAmount);
         } catch (error) {
@@ -32,7 +32,7 @@ const WalletConnectButton = () => {
                 Connect to Phantom Wallet
             </button>
             {balance !== null && (
-                <p>Tuna Balance: {balance}</p>
+                <p>{`${process.env.TOKEN_TICKER}`} Balance: {balance}</p>
             )}
         </div>
     );

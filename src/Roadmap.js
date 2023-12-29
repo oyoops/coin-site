@@ -1,6 +1,33 @@
 import React from "react";
 //import WalletConnectButton from './WalletConnectButton';
 
+
+// ROADMAP:
+const ROADMAP_SECTION_TITLE = `Roadmap`;
+const ROADMAP_SECTION_INTRODUCTION = `Tuna's path to get adopted by everyone in the Solana ecosystem:`;
+
+// GREEN:
+const ROADMAP_GREEN_TITLE = `Complete`;
+const ROADMAP_GREEN_ITEM_1 = `Launch Token`;
+const ROADMAP_GREEN_ITEM_2 = `BirdEye & DEXScreener`;
+const ROADMAP_GREEN_ITEM_3 = `AI Telegram Bot`;
+const ROADMAP_GREEN_ITEM_4 = `New socials and website`;
+
+// YELLOW:
+const ROADMAP_YELLOW_TITLE = `In-Progress`;
+const ROADMAP_YELLOW_ITEM_1 = `Artist creating Notably Fugly Tuna NFTs`;
+const ROADMAP_YELLOW_ITEM_2 = `Listings on CMC & CoinGecko`;
+const ROADMAP_YELLOW_ITEM_3 = `Tuna Tuesday Events`;
+const ROADMAP_YELLOW_ITEM_4 = `Give to Charity`;
+
+// RED:
+const ROADMAP_RED_TITLE = `Future`;
+const ROADMAP_RED_ITEM_1 = `Notably Fugly Tuna Airdrop`;
+const ROADMAP_RED_ITEM_2 = `Add More Utility`;
+const ROADMAP_RED_ITEM_3 = `Rug The Community`;
+const ROADMAP_RED_ITEM_4 = `Flee The Country`;
+
+
 class Roadmap extends React.Component {
   render() {
     return (
@@ -9,50 +36,53 @@ class Roadmap extends React.Component {
         {/* ROADMAP: Header */}
         <div className="roadmap-header">
           <h2>
-            Roadmap
+            {`${ROADMAP_SECTION_TITLE}`}
           </h2>
         
           <p className="text text--standart text--regular ">
-            Tuna's path to get adopted by everyone in the Solana ecosystem:
+            {`${ROADMAP_SECTION_INTRODUCTION}`}
           </p>
         </div>
 
         {/* ROADMAP: Body */}
         <div className="road-body">
         
-          {/* (1) [Green] "Complete" */}
+          {/* Complete [Green] */}
           <div className="card card--white card-green">
             <div className="card__header">
-              <h3>Complete</h3>
+              <h3>{`${ROADMAP_GREEN_TITLE}`}</h3>
             </div>
             <ul>
-              <li>Complete relaunch</li>
-              <li>BirdEye & DEXScreener</li>
-              <li>/supermeme and /tuna in TG</li>
-              <li>New socials and website</li>
+              <li>{`${ROADMAP_GREEN_ITEM_1}`}</li>
+              <li>{`${ROADMAP_GREEN_ITEM_2}`}</li>
+              <li>{`${ROADMAP_GREEN_ITEM_3}`}</li>
+              <li>{`${ROADMAP_GREEN_ITEM_4}`}</li>
             </ul>
           </div>
         
-          {/* (2) [Yellow] "In Progress" */}
+          {/* In-Progress [Yellow] */}
           <div className="card card--white card-yellow">
             <div className="card__header">
-              <h3>In Progress</h3>
+              <h3>{`${ROADMAP_YELLOW_TITLE}`}</h3>
             </div>
             <ul>
-              <li>Artist creating 'Notably Fugly Tunas'</li>
-              <li>Listings on CMC & CoinGecko</li>
-              <li>Tuna Tuesday Events</li>
+              <li>{`${ROADMAP_YELLOW_ITEM_1}`}</li>
+              <li>{`${ROADMAP_YELLOW_ITEM_2}`}</li>
+              <li>{`${ROADMAP_YELLOW_ITEM_3}`}</li>
+              <li>{`${ROADMAP_YELLOW_ITEM_4}`}</li>
             </ul>
           </div>
         
-          {/* (3) [Red] "Future" */}
+          {/* Future [Red] */}
           <div className="card card--secondary card-red">
             <div className="card__header">
-              <h3>Future</h3>
+              <h3>{`${ROADMAP_RED_TITLE}`}</h3>
             </div>
             <ul>
-              <li>Notably Fugly Tuna Airdrop</li>
-              <li>/supermeme 2.0 Utility</li>
+              <li>{`${ROADMAP_RED_ITEM_1}`}</li>
+              <li>{`${ROADMAP_RED_ITEM_2}`}</li>
+              <li>{`${ROADMAP_RED_ITEM_3}`}</li>
+              <li>{`${ROADMAP_RED_ITEM_4}`}</li>
             </ul>
           </div>
         

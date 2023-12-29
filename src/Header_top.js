@@ -9,14 +9,18 @@ import { Link } from "react-router-dom";
 class Header_top extends React.Component {
   render() {
     
-    const contractAddressLiveTrading = process.env.REACT_APP_RAYDIUM_CONTRACT_ADDRESS;
+    const TOKEN_ADDRESS = process.env.TOKEN_ADDRESS;
+    const TOKEN_TWITTER_USERNAME = process.env.TOKEN_TWITTER_USERNAME;
+    const TOKEN_TELEGRAM_GROUP_URL = process.env.TOKEN_TELEGRAM_GROUP_URL;
+    const TOKEN_DAPP_PAGE_NAME = "App";
+    const TOKEN_BUY_LINK_TEXT = "Buy";
 
     return (
       <div className="header_top">
 
         {/* COIN LOGO */}
         <div className="logo">
-          <embed src={Logo} alt="TUNA Logo" />
+          <embed src={Logo} alt="Token Logo" />
           <span className="logo-topleft">
             {/* TUNA */}
           </span>
@@ -43,18 +47,18 @@ class Header_top extends React.Component {
           </ul>
 
           {/* Twitter */}
-          <a href="https://twitter.com/TUNA_Solana" target="_blank" rel="noopener noreferrer">
+          <a href={`https://twitter.com/${TOKEN_TWITTER_USERNAME}`} target="_blank" rel="noopener noreferrer">
             <form>
-              <button className="btn btn--link text text--small text--medium" formaction="https://twitter.com/TUNA_Solana">
+              <button className="btn btn--link text text--small text--medium" formaction={`https://twitter.com/${TOKEN_TWITTER_USERNAME}`}>
                 <img className ="discord" alt="Twitter" src={Twitter}></img>
               </button>
             </form>
           </a>
           
           {/* Telegram */}
-          <a href="https://t.me/TunaSolana" target="_blank" rel="noopener noreferrer">
+          <a href={`${TOKEN_TELEGRAM_GROUP_URL}`} target="_blank" rel="noopener noreferrer">
             <form>
-              <button className="btn btn--link text text--small text--medium" formaction="https://t.me/TunaSolana">
+              <button className="btn btn--link text text--small text--medium" formaction={`${TOKEN_TELEGRAM_GROUP_URL}`}>
                 <img className ="discord" alt="Telegram" src={Telegram}></img>
               </button>
             </form>
@@ -63,30 +67,30 @@ class Header_top extends React.Component {
           {/* Dapp ('Kennel') */}
           <Link to="dApp">
             <button className="btn btn--accent2 text--small text--medium btn-top-app">
-              Kennel
+              {`${TOKEN_DAPP_PAGE_NAME}`}
             </button>
           </Link>
 
           <span className="vertical-line" />
 
           {/* Raydium ("Buy") */}
-          <a href={`https://raydium.io/swap/?inputCurrency=sol&outputCurrency=${contractAddressLiveTrading}&fixed=in`} target="_blank" rel="noopener noreferrer">
+          <a href={`https://raydium.io/swap/?inputCurrency=sol&outputCurrency=${TOKEN_ADDRESS}&fixed=in`} target="_blank" rel="noopener noreferrer">
             <button className="btn btn--accent text--small text--medium btn-top-right">
-              Buy
+              {`${TOKEN_BUY_LINK_TEXT}`}
               <embed src={Swap} className="swap" alt="swap icon"></embed>
             </button>
           </a>
           
-          {/* Twitter (inactive) */}
+          {/*  (INACTIVE) */}
           <form>
-            <button className="btn btn--link text text--small text--medium"  formaction="https://twitter.com/TUNA_Solana">
+            <button className="btn btn--link text text--small text--medium"  formaction={`https://twitter.com/${TOKEN_TWITTER_USERNAME}`}>
               <img className ="discord2" alt="Twitter" src={Twitter}></img>
             </button>
           </form>
           
-          {/* Telegram (inactive) */}
+          {/*  (INACTIVE) */}
           <form>
-            <button className="btn btn--link text text--small text--medium" formaction="https://t.me/TunaSolana">
+            <button className="btn btn--link text text--small text--medium" formaction={`${TOKEN_TELEGRAM_GROUP_URL}`}>
               <img className ="discord2" alt="Telegram" src={Telegram}></img>
             </button>
           </form>
