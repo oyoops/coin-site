@@ -28,7 +28,7 @@ class Team extends React.Component {
                 options={{
                     size: 'large'
                 }}
-                screenName={`${process.env.TOKEN_TWITTER_USERNAME}`}
+                screenName={`${process.env.REACT_APP_TOKEN_TWITTER_USERNAME}`}
                 />
             </div>
             </div>
