@@ -125,8 +125,8 @@ class Header_body extends React.Component {
                 Token Address:
               </span>
               
-              <span onClick={() => {navigator.clipboard.writeText(process.env.TOKEN_ADDRESS)}} className="text text--small text--regular text--white badge-add2">
-                {`${process.env.TOKEN_ADDRESS}`}
+              <span onClick={() => {navigator.clipboard.writeText(TOKEN_ADDRESS)}} className="text text--small text--regular text--white badge-add2">
+                {`${TOKEN_ADDRESS}`}
               </span>  
             </div>
             
