@@ -8,7 +8,7 @@ import axios from 'axios';
 //import { motion } from 'framer-motion';
 
 
-const TOKEN_ADDRESS = process.env.TOKEN_ADDRESS;
+const TOKEN_ADDRESS = `${process.env.TOKEN_ADDRESS}`;
 
 const MAIN_SLOGAN_P1 = `Then it's the <b>perfect</b> time to give <b>Tuna, Solana's #1 Chiweenie</b> (chihuahua-wiener mix) his forever home!`;
 const MAIN_SLOGAN_P2 = `Tuna has LAUNCHED!`;
