@@ -12,8 +12,9 @@ const TOKEN_CIRCULATING_SUPPLY = parseFloat(process.env.REACT_APP_TOKEN_CIRCULAT
 
 const TOKEN_ADDRESS = process.env.REACT_APP_TOKEN_ADDRESS;
 
-const MAIN_SLOGAN_P1 = `Then it's the <b>perfect</b> time to give <b>Tuna, Solana's #1 Chiweenie</b> (chihuahua-wiener mix) his forever home!`;
-const MAIN_SLOGAN_P2 = `Tuna has LAUNCHED!`;
+////const MAIN_SLOGAN_P1 = `Then it's the <b>perfect</b> time to give <b>Tuna, Solana's #1 Chiweenie</b> (chihuahua-wiener mix) his forever home!`;
+const MAIN_SLOGAN_P1 = `Then it's the perfect time to give Tuna, Solana's #1 Chiweenie (chihuahua-wiener mix) a forever home.`;
+const MAIN_SLOGAN_P2 = `Tuna has LAUNCHED! `;
 const MAIN_SLOGAN_DEXSCREENER_LINK_TEXT = "DEXScreener"
 const MAIN_SLOGAN_P3 = `It's time to adopt some Tunas!`;
 
@@ -41,7 +42,7 @@ class Header_body extends React.Component {
 
     axios.request(options)
       .then((response) => {
-        const priceValue = response.data.data.value;
+        const priceValue = parseFloat(response.data.data.value);
         const marketCapValue = priceValue * TOKEN_CIRCULATING_SUPPLY;
         this.setState({ 
           price: priceValue.toFixed(8),
@@ -162,7 +163,7 @@ class Header_body extends React.Component {
                   Market Cap:
                 </span>
                 <span className="text text--small text--regular text--white badge-hold2">
-                  {`${this.state.marketCap}`}
+                  ${this.state.marketCap}
                   {/*{this.state.marketCap}*/}
                 </span>
             </div>
