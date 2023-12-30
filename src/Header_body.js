@@ -163,8 +163,7 @@ class Header_body extends React.Component {
                   Market Cap:
                 </span>
                 <span className="text text--small text--regular text--white badge-hold2">
-                  ${this.state.marketCap}
-                  {/*{this.state.marketCap}*/}
+                  {this.state.marketCap}
                 </span>
             </div>
 
