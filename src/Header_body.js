@@ -85,7 +85,7 @@ class Header_body extends React.Component {
       rocketElement.style.transform = `translate(${x}px, ${y}px) rotate(${rotation}deg)`;
     };
 
-    setInterval(updateRocketPosition, 1250); // Update rocket position every 1.25 seconds
+    setInterval(updateRocketPosition, 1250); // Update animated image position every 1.25 seconds
   }
 
 
