@@ -2,7 +2,6 @@ import React from "react";
 import background6 from "./images/background-item-6.svg";
 import background7 from "./images/background-item-7.svg";
 
-
 const TOKENOMICS_SECTION_TITLE = `Tuna Tokenomics`;
 const TOKENOMICS_SECTION_SUBTITLE = `Distribution`;
 
@@ -76,7 +75,6 @@ class Features extends React.Component {
         </div>
           </div>
         </div>
-
 
         {/*
         <div className="banner-bottom-margin">
