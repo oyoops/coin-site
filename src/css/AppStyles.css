@@ -1,0 +1,22 @@
+/* Style for the container holding the SVG */
+.logo {
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    position: relative; /* Needed for absolute positioning of child elements */
+  }
+  
+  /* Style for the SVG element */
+  .logo embed {
+    width: 100%;
+    height: 100%;
+    display: block; /* Removes any default margin or padding */
+  }
+  
+  /* Style for the top-left positioned span */
+  .logo-topleft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Add more styling as needed */
+  }
+  

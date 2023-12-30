@@ -7,6 +7,9 @@ import Typical from 'react-typical';
 import axios from 'axios';
 //import { motion } from 'framer-motion';
 
+import './css/AppStyles.css'; // custom CSS
+
+
 const BIRDEYE_API_KEY = process.env.REACT_APP_BIRDEYE_API_KEY;
 const TOKEN_CIRCULATING_SUPPLY = parseFloat(process.env.REACT_APP_TOKEN_CIRCULATING_SUPPLY); // 9950000000 = 1 billion
 
@@ -15,7 +18,7 @@ const TOKEN_ADDRESS = process.env.REACT_APP_TOKEN_ADDRESS;
 ////const MAIN_SLOGAN_P1 = `Then it's the <b>perfect</b> time to give <b>Tuna, Solana's #1 Chiweenie</b> (chihuahua-wiener mix) his forever home!`;
 const MAIN_SLOGAN_P1 = `Then it's the perfect time to give Tuna, Solana's #1 Chiweenie (chihuahua-wiener mix) a forever home.`;
 const MAIN_SLOGAN_P2 = `Tuna has LAUNCHED! `;
-const MAIN_SLOGAN_DEXSCREENER_LINK_TEXT = "DEXScreener"
+const MAIN_SLOGAN_DEXSCREENER_LINK_TEXT = " DEXScreener"
 const MAIN_SLOGAN_P3 = `It's time to adopt some Tunas!`;
 
 const MAIN_SLOGAN_HOOK = `Tuna Time! ⏰`;
