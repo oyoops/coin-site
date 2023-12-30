@@ -7,6 +7,8 @@ import Typical from 'react-typical';
 import axios from 'axios';
 //import { motion } from 'framer-motion';
 
+const BIRDEYE_API_KEY = process.env.REACT_APP_BIRDEYE_API_KEY;
+const TOKEN_CIRCULATING_SUPPLY = parseFloat(process.env.REACT_APP_TOKEN_CIRCULATING_SUPPLY); // 9950000000 = 1 billion
 
 const TOKEN_ADDRESS = process.env.REACT_APP_TOKEN_ADDRESS;
 
@@ -34,18 +36,19 @@ class Header_body extends React.Component {
     const options = {
       method: 'GET',
       url: `https://public-api.birdeye.so/public/price?address=${TOKEN_ADDRESS}`,
-      headers: {'X-API-KEY': 'e65a058fd2d34919ae0f831990eda79b'}
+      headers: {'X-API-KEY': `${BIRDEYE_API_KEY}`}
     };
 
     axios.request(options)
       .then((response) => {
         const priceValue = response.data.data.value;
-        const marketCapValue = priceValue * 9.95e8; // Multiply by .995 billion (???)
+        const marketCapValue = priceValue * TOKEN_CIRCULATING_SUPPLY;
         this.setState({ 
           price: priceValue.toFixed(8),
           marketCap: marketCapValue.toLocaleString('en-US', { style: 'currency', currency: 'USD' }) // Format as currency
         });
     
+        /*
         // New API call for holder count
         axios.get('API_ENDPOINT')
           .then((holderResponse) => {
@@ -56,18 +59,19 @@ class Header_body extends React.Component {
             console.error(holderError);
             this.setState({ holderCount: 'Unavailable' });
           });
+        */
     
       })
       .catch((error) => {
         console.error(error);
         this.setState({ 
-          price: 'Unavailable',
-          marketCap: 'Unavailable',
-          holderCount: 'Unavailable'
+          price: 'Launching soon!',
+          marketCap: 'Launching soon!'
         });
       });
   }
 
+  // Animate the main page image
   startRocketAnimation() {
     const rocketElement = document.querySelector('.token_logo');
 
@@ -80,12 +84,11 @@ class Header_body extends React.Component {
       rocketElement.style.transform = `translate(${x}px, ${y}px) rotate(${rotation}deg)`;
     };
 
-    setInterval(updateRocketPosition, 2500); // Update rocket position every 2.5 seconds
+    setInterval(updateRocketPosition, 1250); // Update rocket position every 1.25 seconds
   }
 
 
   render() {
-    
     return (
       <div className="header_body">
         <div className="grid_choose grid-gap--small">
@@ -130,6 +133,7 @@ class Header_body extends React.Component {
               </span>  
             </div>
             
+            {/*
             <div className="badge-container-hold">
               <span className="badge-hold badge--dark-hold text--small">
                 Holders:
@@ -139,7 +143,8 @@ class Header_body extends React.Component {
                 {`${this.state.holderCount}`}
               </span>
             </div>
-            
+            */}
+
             {/* Coin Price */}
             <div className="badge-container-price">
                 <span className="badge-hold badge--dark-hold text--small">
