@@ -134,7 +134,6 @@ class Header_body extends React.Component {
             */}
 
             {/* Coin Price */}
-            {/*}
             <div className="badge-container-price">
                 <span className="badge-hold badge--dark-hold text--small">
                   Price:
@@ -143,7 +142,6 @@ class Header_body extends React.Component {
                   ${`${this.state.price}`}
                 </span>
             </div>
-            */}
 
             {/* Market Cap */}
             <div className="badge-container-market-cap">
@@ -159,7 +157,7 @@ class Header_body extends React.Component {
             <LinkR to="buyLink" spy={true} smooth={true}>
               <button className="value-proposition__button btn btn--flex btn--accent btn-buy" > 
                 <span className="text--standart text--medium text-bold">
-                  How can I buy?
+                  How to Buy
                 </span>
                 <div className="chiron-icon-container">
                   <img src={chevronRight} alt="Right Icon" />
