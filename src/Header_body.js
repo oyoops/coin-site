@@ -14,7 +14,7 @@ const TOKEN_CIRCULATING_SUPPLY = parseFloat(process.env.REACT_APP_TOKEN_CIRCULAT
 const TOKEN_ADDRESS = process.env.REACT_APP_TOKEN_ADDRESS;
 
 //const MAIN_SLOGAN_P1 = `Then meet RockWifHat, the rock-solid investment wearing a rich, firm top-hat.`;
-const MAIN_SLOGAN_P1 = `RockWifHat (a.k.a. Rocky), the first rock in world history to don a top hat, and his beautiful wife, Roxanne, promise holders with the long-term sturdiness of ROCK 🪨, the swag and chic of TOP HAT 🎩, ... oh, and AI!`;
+const MAIN_SLOGAN_P1 = `RockWifHat (a.k.a. Rocky), the first rock in world history to don a top hat, and his beautiful wife, Roxanne, promise holders with the long-term sturdiness of ROCK 🪨, the swag and chic of TOP HAT 🎩, ... oh, and AI.`;
 const MAIN_SLOGAN_P2 = `Ready to add a rock-solid - and highly fashionable - investment to your portfolio? $ROCKWIFHAT makes its grand debut on 1/1/2024 at 1:11 PM EST (UTC: 6:11 PM)`;
 const MAIN_SLOGAN_DEXSCREENER_LINK_TEXT = "DEXScreener";
 const MAIN_SLOGAN_P3 = `Add some hardness & elegance to your portfolio.`;
