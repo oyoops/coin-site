@@ -114,9 +114,11 @@ h3 {
   line-height: 1.5;
 }
 
-.why-text{
+.why-text {
   width: 87%;
+  line-height: 0.9; /* Example of a tight line height */
 }
+
 
 .text-bold{
   font-weight: bold;
