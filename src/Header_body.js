@@ -13,10 +13,10 @@ const TOKEN_CIRCULATING_SUPPLY = parseFloat(process.env.REACT_APP_TOKEN_CIRCULAT
 
 const TOKEN_ADDRESS = process.env.REACT_APP_TOKEN_ADDRESS;
 
-const MAIN_SLOGAN_P1 = `Then it's the prime time to embrace $ROCKWIFHAT - the rock-solid investment wearing a rich, firm top-hat. The rock women can't keep their hands off the rich and handsome Rocky.`;
-const MAIN_SLOGAN_P2 = `$ROCKWIFHAT is making its grand debut!`;
+const MAIN_SLOGAN_P1 = `Then meet RockWifHat, the rock-solid investment wearing a rich, firm top-hat.`;
+const MAIN_SLOGAN_P2 = `$ROCKWIFHAT makes its grand debut on 1/1/2024 at 1:11 PM EST (UTC: 6:11 PM)`;
 const MAIN_SLOGAN_DEXSCREENER_LINK_TEXT = "DEXScreener";
-const MAIN_SLOGAN_P3 = `Add some rock-solid elegance to your portfolio.`;
+const MAIN_SLOGAN_P3 = `Why not add some hardness and elegance to your portfolio?`;
 
 const MAIN_SLOGAN_HOOK = `(🪨,🎩)`;
 
@@ -82,9 +82,13 @@ class Header_body extends React.Component {
         <div className="grid_choose grid-gap--small">
           <div className="value-proposition">
             
-            {/* MAIN TOKEN IMAGE */}
+            {/* ANIMATED LOGO */}
             <embed src={animated_coin} className="token_logo"/> 
-            {/*<embed src={coin} className="token_logo" style={tokenLogoStyle} />*/}
+
+            {/* TOP MAIN HEADER */}
+            <h2 className="value-proposition__title">
+              {`${MAIN_SLOGAN_HOOK}`}
+            </h2>
 
             {/* WISH YOU GOT INTO ____ ? */}
             <p className="value-proposition__text text text--small text--regular">
@@ -106,15 +110,10 @@ class Header_body extends React.Component {
               {`${MAIN_SLOGAN_P3}`}
             </p>
             
-            {/* TOP MAIN HEADER */}
-            <h2 className="value-proposition__title">
-              {`${MAIN_SLOGAN_HOOK}`}
-            </h2>
-
             {/* COIN STATS CONTAINER */}
             <div className="badge-container-add">
               <span className="badge-add badge--dark-add text--small">
-                Token Address:
+                Contract Address:
               </span>
               
               <span onClick={() => {navigator.clipboard.writeText(TOKEN_ADDRESS)}} className="text text--small text--regular text--white badge-add2">
@@ -135,6 +134,7 @@ class Header_body extends React.Component {
             */}
 
             {/* Coin Price */}
+            {/*}
             <div className="badge-container-price">
                 <span className="badge-hold badge--dark-hold text--small">
                   Price:
@@ -143,22 +143,23 @@ class Header_body extends React.Component {
                   ${`${this.state.price}`}
                 </span>
             </div>
+            */}
 
             {/* Market Cap */}
             <div className="badge-container-market-cap">
                 <span className="badge-hold badge--dark-hold text--small">
-                  Market Cap:
+                  Market cap:
                 </span>
                 <span className="text text--small text--regular text--white badge-hold2">
                   {this.state.marketCap}
                 </span>
             </div>
 
-            {/* "Buy (TOKEN)" Button */}
+            {/* "How can I buy?" Button */}
             <LinkR to="buyLink" spy={true} smooth={true}>
               <button className="value-proposition__button btn btn--flex btn--accent btn-buy" > 
                 <span className="text--standart text--medium text-bold">
-                  How to Buy $ROCKWIFHAT
+                  How can I buy?
                 </span>
                 <div className="chiron-icon-container">
                   <img src={chevronRight} alt="Right Icon" />
