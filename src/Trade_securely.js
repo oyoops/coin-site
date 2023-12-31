@@ -11,11 +11,11 @@ class Trade_securely extends React.Component {
     return (
       <section className="trade-securely">
         <h2 className="text--primary text-howBuy" id='buyLink'>
-          Buy $TUNA
+          How to Buy RockWifHat
         </h2>
         <a href={`https://raydium.io/swap/?inputCurrency=sol&outputCurrency=${process.env.REACT_APP_TOKEN_ADDRESS}&fixed=in`} target="_blank" rel="noopener noreferrer">
           <button className="btn btn--accent text--small text--medium btn-top-right">
-            Buy <img src={Swap} className="swap" alt="swap icon"/>
+            Buy Now <img src={Swap} className="swap" alt="swap icon"/>
           </button>
         </a>
 
@@ -47,11 +47,11 @@ class Trade_securely extends React.Component {
             <img alt="SOL" src={BNB} />
           </div>
           <div className="card__header">
-            <h3>Send SOL to Phantom</h3>
+            <h3>Send Solana to Phantom</h3>
           </div>
           <p className="text text-small text--regular card__text">
-          You can buy SOL from Coinbase or another exchange, then send it directly to your Phantom public address.
-          Once it arrives (few minutes, if using Coinbase), you can use Phantom's browser tab to visit a DEX (decentralized exchange) to swap SOL for the $ROCKWIFHAT contract address.
+            You can buy SOL from Coinbase or another exchange, then send it directly to your Phantom public address.
+            Once it arrives (few minutes, if using Coinbase), you can use Phantom's browser tab to visit a DEX (decentralized exchange) to swap SOL for the $ROCKWIFHAT contract address.
           </p>
         </div>
         <div className="card card--white">
@@ -59,11 +59,11 @@ class Trade_securely extends React.Component {
             <img alt="Raydium" src={Pancake} />
           </div>
           <div className="card__header">
-            <h3>Connect your wallet to Raydium</h3>
+            <h3>Connect Wallet to Raydium</h3>
           </div>
           <p className="text text-small text--regular card__text">
-          Swap, earn, and build on the leading decentralized crypto trading protocol. 
-          Raydium allows you to swap any Solana token for $ROCKWIFHAT.
+            Raydium is Solana's most popular DeFi protocol. 
+            It allows you to easily swap SOL or any other Solana token for $ROCKWIFHAT.
           </p>
           <a href="https://raydium.io/" nofollow="true" target="_blank" rel="noreferrer">
           <button className="btn btn--flex btn--accent">
@@ -82,9 +82,9 @@ class Trade_securely extends React.Component {
             <h3>Trade Solana for RockWifHat</h3>
           </div>
           <p className="text text-small text--regular card__text">
-          You can start swapping as soon as you have SOL available!
-          Copy the $ROCKWIFHAT token address from the top of the page. Then, on Raydium, tap ‘Select a token’ on the second token input field and paste the $ROCKWIFHAT address.
-          LASTLY, TYPE OVER 9000 SOL AND PRESS 'SWAP'!
+            You can start swapping as soon as you have SOL available!
+            Copy the $ROCKWIFHAT token address from the top of the page. Then, on Raydium, tap ‘Select a token’ on the second token input field and paste the $ROCKWIFHAT address.
+            LASTLY, TYPE OVER 9000 SOL AND PRESS 'SWAP'!
           </p>
           <button className="btn btn--flex btn--accent">
             <span className="text--standart text--medium text-bold">$ROCKWIFHAT: It's a Movement.</span>
