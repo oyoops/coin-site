@@ -4,12 +4,12 @@ import Currency from "./images/currency.svg";
 import Claim from "./images/claim-coin.svg";
 import { Link, NavLink } from "react-router-dom";
 
-const NAME_FOR_STAKING = `Put Down Tuna`;
-const NAME_FOR_BURNING = `Doggie Daycare`;
-const NAME_FOR_CLAIMING = `Check for Poopies`;
+const NAME_FOR_STAKING = `Stake $ROCKWIFHAT`;
+const NAME_FOR_BURNING = `Burn $ROCKWIFHAT`;
+const NAME_FOR_CLAIMING = `Claim $ROCKWIFHAT`;
 
-const APP_DESC_P1 = `The Tuna Kennel is <strong>under construction</strong> 👷🏼‍♂️`;
-const APP_DESC_P2 = `Phantom/MetaMask wallet connections may work, but there are no smart contracts tied to any of these buttons.`;
+const APP_DESC_P1 = `RockWifHat dApp is UNDER CONSTRUCTION! 👷🏼‍♂️`;
+const APP_DESC_P2 = `Please pardon my rock dust. The Phantom/MetaMask wallet connections should work, but there are NO smart contracts tied to these buttons.`;
 
 
 export function DAppNav() {

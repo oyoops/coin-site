@@ -13,11 +13,11 @@ class Trade_securely extends React.Component {
         <h2 className="text--primary text-howBuy" id='buyLink'>
           Buy $TUNA
         </h2>
-          <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=5dPFGRmgA9PdD3YTYCDnkbfRu4MBEEUL5akev5E7PAJZ&fixed=in" target="_blank" rel="noopener noreferrer">
+        <a href={`https://raydium.io/swap/?inputCurrency=sol&outputCurrency=${process.env.REACT_APP_TOKEN_ADDRESS}&fixed=in`} target="_blank" rel="noopener noreferrer">
           <button className="btn btn--accent text--small text--medium btn-top-right">
-            Buy <embed src={Swap} className="swap" alt="swap icon"></embed>
+            Buy <img src={Swap} className="swap" alt="swap icon"/>
           </button>
-          </a>
+        </a>
 
 
         <h3 className="text--primary text-howBuy"> or... </h3>
@@ -27,15 +27,15 @@ class Trade_securely extends React.Component {
             <img alt="Phantom" src={MetaMask}/>
           </div>
           <div className="card__header">
-            <h3>Create Phantom Wallet</h3>
+            <h3>Make a Phantom Wallet</h3>
           </div>
           <p className="text text-small text--regular card__text">
-            Create a Phantom Wallet using either a desktop computer or an iOS/Android mobile device.
-            This wallet will allow you to buy, sell, send, and receive TUNA as well as any other Solana token.
+            Download the Phantom wallet on either desktop (browser plugin) or iOS/Android.
+            This is a Solana wallet allowing you to buy, sell, send, and receive $ROCKWIFHAT and any other Solana-based tokens.
           </p>
           <a href="https://phantom.app/" nofollow="true" target="_blank" rel="noreferrer">
           <button className="btn btn--flex btn--accent">
-            <span className="text--standart text--medium text-bold">Create Wallet</span>
+            <span className="text--standart text--medium text-bold">New Wallet</span>
             <div className="chiron-icon-container">
               <img src={ChevronRight} alt="Right Icon" />
             </div>
@@ -47,11 +47,13 @@ class Trade_securely extends React.Component {
             <img alt="SOL" src={BNB} />
           </div>
           <div className="card__header">
-            <h3>Send SOL to your wallet</h3>
+            <h3>Send SOL to Phantom</h3>
           </div>
           <p className="text text-small text--regular card__text">
-          You can buy SOL directly from exchanges like Coinbase or from a DEX/decentralized exchange like Raydium.
-          Make sure to use the Solana network when transferring SOL.
+          You can buy SOL from Coinbase or another exchange, then send it directly to your Phantom public address.
+          Once it arrives (few minutes, if using Coinbase), you can use Phantom's browser tab to visit a DEX (decentralized exchange) to swap SOL for any Solana token.
+          The most popular DEX on Solana is Raydium. But give Jup.ag a try, too! You'll thank me profusely in six months after the $JUP airdrop.
+          Never send SOL *to* a token's contract address! Interact with DEXes to engage in DeFi.
           </p>
         </div>
         <div className="card card--white">
@@ -63,7 +65,7 @@ class Trade_securely extends React.Component {
           </div>
           <p className="text text-small text--regular card__text">
           Swap, earn, and build on the leading decentralized crypto trading protocol. 
-          Raydium allows you to swap any Solana token for $TUNA.
+          Raydium allows you to swap any Solana token for $ROCKWIFHAT.
           </p>
           <a href="https://raydium.io/" nofollow="true" target="_blank" rel="noreferrer">
           <button className="btn btn--flex btn--accent">
@@ -79,14 +81,15 @@ class Trade_securely extends React.Component {
             <img alt="Swap TUNA" src={SwapECAT} />
           </div>
           <div className="card__header">
-            <h3>Swap SOL for TUNA</h3>
+            <h3>Trade Solana for RockWifHat</h3>
           </div>
           <p className="text text-small text--regular card__text">
           You can start swapping as soon as you have SOL available!
-          Press ‘Select a token’ and enter TUNA's contract address.
+          Copy the $ROCKWIFHAT token address from the top of the page. Then, on Raydium, tap ‘Select a token’ on the second token input field and paste the $ROCKWIFHAT address.
+          LASTLY, TYPE OVER 9000 SOL AND PRESS 'SWAP'!
           </p>
           <button className="btn btn--flex btn--accent">
-            <span className="text--standart text--medium text-bold">TUNA Token</span>
+            <span className="text--standart text--medium text-bold">$ROCKWIFHAT: It's a Movement.</span>
             <div className="chiron-icon-container">
               <img src={ChevronRight} alt="Right Icon" />
             </div>

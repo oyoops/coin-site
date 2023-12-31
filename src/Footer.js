@@ -1,9 +1,8 @@
 import React from "react";
 import Logo from "./images/Coin-Logov2.svg";
 
-
-const FOOTER_TITLE_TEXT = `Tuna`;
-const FOOTER_TEXT = `Tuna for one; Tuna for all.`;
+const FOOTER_TITLE_TEXT = `rockwifhat`;
+const FOOTER_TEXT = `Rock + Top Hat + AI + ?????? = PROFIT!.`;
 
 
 class Footer extends React.Component {

@@ -3,29 +3,29 @@ import React from "react";
 
 
 // ROADMAP:
-const ROADMAP_SECTION_TITLE = `Roadmap`;
-const ROADMAP_SECTION_INTRODUCTION = `Tuna's path to get adopted by everyone in the Solana ecosystem:`;
+const ROADMAP_SECTION_TITLE = `RoadmapWifHat`;
+const ROADMAP_SECTION_INTRODUCTION = `Charting $ROCKWIFHAT's journey through the Solana jeetcosystem:`;
 
 // GREEN:
-const ROADMAP_GREEN_TITLE = `Complete`;
-const ROADMAP_GREEN_ITEM_1 = `Launch Token`;
-const ROADMAP_GREEN_ITEM_2 = `BirdEye & DEXScreener`;
-const ROADMAP_GREEN_ITEM_3 = `AI Telegram Bot`;
-const ROADMAP_GREEN_ITEM_4 = `New socials and website`;
+const ROADMAP_GREEN_TITLE = `Now Rocking & Rolling`;
+const ROADMAP_GREEN_ITEM_1 = `Launch of $ROCKWIFHAT Token (TODAY!)`;
+const ROADMAP_GREEN_ITEM_2 = `AI-Powered Meme Bot! (From Scratch + Trained Model = BASED DEV.)`;
+const ROADMAP_GREEN_ITEM_3 = `Enhanced DEXScreener Profile`;
+const ROADMAP_GREEN_ITEM_4 = `Launch of New Chic Social Media Channels and a Stylish Website`;
 
 // YELLOW:
-const ROADMAP_YELLOW_TITLE = `In-Progress`;
-const ROADMAP_YELLOW_ITEM_1 = `Artist creating Notably Fugly Tuna NFTs`;
-const ROADMAP_YELLOW_ITEM_2 = `Listings on CMC & CoinGecko`;
-const ROADMAP_YELLOW_ITEM_3 = `Tuna Tuesday Events`;
-const ROADMAP_YELLOW_ITEM_4 = `Give to Charity`;
+const ROADMAP_YELLOW_TITLE = `Just Around the Top Hat`;
+const ROADMAP_YELLOW_ITEM_1 = `Creation of 'Chic Pebbles' NFTs by Renowned Artist Bok`;
+const ROADMAP_YELLOW_ITEM_2 = `Achieving Listings on CMC & CoinGecko (Harder!)`;
+const ROADMAP_YELLOW_ITEM_3 = `Hosting 'Top Hat Tuesday' (Community Contests & Giveaways)`;
+const ROADMAP_YELLOW_ITEM_4 = `BirdEye Enhanced Info and Strategic Partnerships`;
 
 // RED:
-const ROADMAP_RED_TITLE = `Future`;
-const ROADMAP_RED_ITEM_1 = `Notably Fugly Tuna Airdrop`;
-const ROADMAP_RED_ITEM_2 = `Add More Utility`;
-const ROADMAP_RED_ITEM_3 = `Rug The Community`;
-const ROADMAP_RED_ITEM_4 = `Flee The Country`;
+const ROADMAP_RED_TITLE = `A Stone's Throw Away`;
+const ROADMAP_RED_ITEM_1 = `Airdrop 'Chic Pebbles' NFTs to $ROCKWIFHAT Holders`;
+const ROADMAP_RED_ITEM_2 = `Expand Token Utility via AI-Powered Social Features`;
+const ROADMAP_RED_ITEM_3 = `List on a centralized exchange!`;
+const ROADMAP_RED_ITEM_4 = `Merch! Top Hats and Pet Rocks`;
 
 
 class Roadmap extends React.Component {

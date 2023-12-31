@@ -15,13 +15,12 @@ const TOKEN_CIRCULATING_SUPPLY = parseFloat(process.env.REACT_APP_TOKEN_CIRCULAT
 
 const TOKEN_ADDRESS = process.env.REACT_APP_TOKEN_ADDRESS;
 
-////const MAIN_SLOGAN_P1 = `Then it's the <b>perfect</b> time to give <b>Tuna, Solana's #1 Chiweenie</b> (chihuahua-wiener mix) his forever home!`;
-const MAIN_SLOGAN_P1 = `Then it's the perfect time to give Tuna, Solana's #1 Chiweenie (chihuahua-wiener mix) a forever home.`;
-const MAIN_SLOGAN_P2 = `Tuna has LAUNCHED! `;
-const MAIN_SLOGAN_DEXSCREENER_LINK_TEXT = " DEXScreener"
-const MAIN_SLOGAN_P3 = `It's time to adopt some Tunas!`;
+const MAIN_SLOGAN_P1 = `Then it's the prime time to embrace $ROCKWIFHAT - the rock-solid investment with the dapper hat. The rock women can't keep their hands off the rich and handsome Rocky.`;
+const MAIN_SLOGAN_P2 = `$ROCKWIFHAT is making its grand debut!`;
+const MAIN_SLOGAN_DEXSCREENER_LINK_TEXT = "DEXScreener";
+const MAIN_SLOGAN_P3 = `Add some rock-solid elegance to your portfolio.`;
 
-const MAIN_SLOGAN_HOOK = `Tuna Time! ⏰`;
+const MAIN_SLOGAN_HOOK = `🪨 + 🎩 + AI 🧠 = 💎`;
 
 
 class Header_body extends React.Component {
@@ -69,8 +68,8 @@ class Header_body extends React.Component {
       .catch((error) => {
         console.error(error);
         this.setState({ 
-          price: 'Launching soon!',
-          marketCap: 'Launching soon!'
+          price: 'Launching TONIGHT!',
+          marketCap: 'Launching TONIGHT!'
         });
       });
   }
@@ -105,7 +104,7 @@ class Header_body extends React.Component {
             {/* WISH YOU GOT INTO ____ ? */}
             <p className="value-proposition__text text text--small text--regular">
               Wish you got into <Typical className="typical"
-                steps={['DOGE', 1500, 'BONK', 1500, 'MYRO', 1500, 'SAMO', 1500, 'LEIA', 1500, 'WIF', 1500]}
+                steps={['DOGWIFHAT', 1500, 'CATWIFHAT', 1500, 'USEDCAR', 1500, 'USEDCARWIFHAT', 1500, 'NIOCTIB', 1500, 'NIOCTIBWIFHAT', 1500, 'ANALOS', 1500, 'ANALOSWIFHAT', 1500]}
                 loop={Infinity}
                 wrapper="p"
               /> early?</p>
@@ -116,7 +115,7 @@ class Header_body extends React.Component {
             </p>
             <p>  
               {`${MAIN_SLOGAN_P2}`}
-              <a href={`https://dexscreener.com/solana/${TOKEN_ADDRESS}`}>{`${MAIN_SLOGAN_DEXSCREENER_LINK_TEXT}`}</a>
+              <a href={`https://dexscreener.com/solana/${TOKEN_ADDRESS}`}> {`${MAIN_SLOGAN_DEXSCREENER_LINK_TEXT}`} </a>
               <br></br>
               {`${MAIN_SLOGAN_P3}`}
             </p>
@@ -155,8 +154,7 @@ class Header_body extends React.Component {
                   Price:
                 </span>
                 <span className="text text--small text--regular text--white badge-hold2">
-                  $ {`${this.state.price}`}
-                  {/*${this.state.price}*/}
+                  ${`${this.state.price}`}
                 </span>
             </div>
 
@@ -170,11 +168,11 @@ class Header_body extends React.Component {
                 </span>
             </div>
 
-            {/* "Buy TUNA" Button */}
+            {/* "Buy (TOKEN)" Button */}
             <LinkR to="buyLink" spy={true} smooth={true}>
               <button className="value-proposition__button btn btn--flex btn--accent btn-buy" > 
                 <span className="text--standart text--medium text-bold">
-                  How to Buy
+                  How to Buy $ROCKWIFHAT
                 </span>
                 <div className="chiron-icon-container">
                   <img src={chevronRight} alt="Right Icon" />

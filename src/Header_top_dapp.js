@@ -11,19 +11,19 @@ class Header_top extends React.Component {
       <div className="header_dapp">
       <div className="header_top">
         <div className="logo">
-          <embed src={Logo} alt="Tuna Logo" />
+          <embed src={Logo} alt="RockWifHat Logo" />
           <span className="logo-topleft">
-            {/* TUNA */}
+            {/* RockWifHat */}
           </span>
         </div>
         <nav>
           <form>
-            <button className="btn btn--link text text--small text--medium" formaction="https://twitter.com/TUNA_Solana">
+            <button className="btn btn--link text text--small text--medium" formaction={`https://twitter.com/${process.env.TOKEN_TWITTER_USERNAME}`}>
               <img className ="discord" alt="Twitter" src={Twitter}></img>
             </button>
           </form>
           <form>
-            <button className="btn btn--link text text--small text--medium" formaction="https://t.me/TunaSolana">
+            <button className="btn btn--link text text--small text--medium" formaction={`${process.env.TOKEN_TELEGRAM_GROUP_URL}`}>
               <img className ="discord" alt="Telegram" src={Telegram}></img>
             </button>
           </form>

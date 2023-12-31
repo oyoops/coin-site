@@ -2,19 +2,18 @@ import React from "react";
 import {Link} from 'react-scroll';
 
 
-const COIN_LONG_DESCRIPTION_SECTION_TITLE = `Why should you adopt Tuna?`;
+const COIN_LONG_DESCRIPTION_SECTION_TITLE = `Unearth RockWifHat with us!`;
 
-const COIN_LONG_DESCRIPTION_SECTION_DESC_P1 = `Tuna once led a tough life; neglected, unwanted, and ugly. Wherever Tuna treks, he broke mirrors and caused accidents as onlookers stared at him in disgust. "Abomination! Abomination!" they shouted, in disbelief that a higher power would have created something so hideous.`;
-const COIN_LONG_DESCRIPTION_SECTION_DESC_P2 = `Against all odds, Tuna was adopted by a loving family, given an Instagram account, and blew up; Tuna quickly gained over <strong>1.9M followers</strong> by posting daily funny faces, outfits, and poses.
-Even the ugliest dogs deserve loving homes to rise and meet their full potentials. For every Tuna that is adopted and loved, there are so many who go unadopted and unloved for life, and that's it.
-Is today the day you decide to adopt your own <b>Tuna</b> to love and admire? To be forever-companions? Won't you adopt Tuna for what's underneath?
-Might a lovable, famous Chiweenie hiding behind such a gruff, unkempt exterior? Tuna just wants to be your best friend. If not you, then who will?`;
-const COIN_LONG_DESCRIPTION_SECTION_DESC_P3 = `Tuna <strong>can't wait</strong> to meet his new master and call your wallet home! 🐶`;
+const COIN_LONG_DESCRIPTION_SECTION_DESC_P1 = `In a world where ordinary rocks are too often overlooked, RockWifHat stands out with its exquisite, regal top hat. This isn't just a rock, nor is it just a rock with a hat; $ROCKWIFHAT is a bona fide fashion statement - a symbol of enduring grace amidst the turbulent Solana landscape of jeets and rugs. This rock, however, is rock-solid (and has great fashion). ETH maxis may scoff, but aficionados know: $ROCKWIFHAT is more than a token. This is the beginning of a worldwide movement to ensure that overlooked inanimate objects everywhere deserve to be WIF HAT just as much (if not more than) as our pets.`;
 
-const COIN_LONG_DESCRIPTION_SECTION_BULLET_1_TEXT = `Solana's #1 Chiweenie`;
-const COIN_LONG_DESCRIPTION_SECTION_BULLET_2_TEXT = `1.9M Instagram Followers`;
-const COIN_LONG_DESCRIPTION_SECTION_BULLET_3_TEXT = `Addicting Tuna Meme-Maker (Exclusive AI Bot)`;
-const COIN_LONG_DESCRIPTION_SECTION_BULLET_4_TEXT = `Notably Fugly Tunas: NFT Future Airdrop`;
+const COIN_LONG_DESCRIPTION_SECTION_DESC_P2 = `The journey of $ROCKWIFHAT is a tale of one flamboyant pebble named Rocky. Rocky's story captivates all who hear it, giving hope to all inanimate objects without hats that so desire to obtain and don one. Rocky, now a stoic stone, with his beautiful wife Roxanne, represent the epitome of high fashion. With each new $ROCKWIFHAT supporter, Rocky carves deeper his place in the annals of meme token history... and not just as a digital asset, but as an icon of style. Embracing $ROCKWIFHAT means embracing a lifestyle where wit is as sharp as a chisel on stone, and elegance is as natural as Rocky's smooth, luscious rock skin.`;
+
+const COIN_LONG_DESCRIPTION_SECTION_DESC_P3 = `Ready to make a bold statement in your portfolio? $ROCKWIFHAT awaits its grand entrance into your wallet, promising a blend of rock 🪨, top hat 🎩, ... oh, and AI too! Please help to spread Rocky's story by using the "/meme" and "/chat" Telegram commands.`;
+
+const COIN_LONG_DESCRIPTION_SECTION_BULLET_1_TEXT = `AI-Powered RockWifHat! Use in Telegram.`;
+const COIN_LONG_DESCRIPTION_SECTION_BULLET_2_TEXT = `'Chic Pebbles' NFTs Under Development.`;
+const COIN_LONG_DESCRIPTION_SECTION_BULLET_3_TEXT = `Rocks Don't Normally Wear Hats.`;
+const COIN_LONG_DESCRIPTION_SECTION_BULLET_4_TEXT = `Rocky Wears a Top Hat (#1 Hat Variety).`;
 
 const COIN_LONG_DESCRIPTION_SECTION_GO_TO_TOKENOMICS_BUTTON_TEXT = `Tokenomics`;
 

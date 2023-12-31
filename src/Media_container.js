@@ -3,18 +3,19 @@ import Rocket from "./images/rocket3.svg";
 import Coins from "./images/coins.svg";
 import Vote from "./images/vote.svg";
 
-const WHY_THIS_COIN_TITLE_1 = `ADOPT TUNA`;
-const WHY_THIS_COIN_TITLE_2 = `HOLD`;
-const WHY_THIS_COIN_TITLE_3 = `SPREAD THE UGLY`;
+const WHY_THIS_COIN_TITLE_1 = `MEET $ROCKWIFHAT TODAY`;
+const WHY_THIS_COIN_TITLE_2 = `INVEST ROCK-SOLID(LY)`;
+const WHY_THIS_COIN_TITLE_3 = `SPREAD THE WIFHAT WORD`;
 
-const WHY_THIS_COIN_DESC_1 = `Adopt Tuna the Chiweenie, then grab your keys for the rocket ship, because we're leaving for the moon soon; and <strong>Tuna is coming with us!</strong> 
-Compare Tunas with other adopters in the Telegram and on X/Twitter Spaces.`;
-const WHY_THIS_COIN_DESC_2 = `TUNA officially launched on Dec. 22, 2023 after re-launching 3 times, each with a stronger community and higher LP & stronger rising floor than the last. 
-Tuna token holders are entitled to 'Neglected Fugly Tuna' (NFT) airdrops - already underway by our in-house, on-team NFT artist Bok - the amazingly addictive <strong>'/supermeme'</strong> Telegram command, and much more to come.`;
-const WHY_THIS_COIN_DESC_3 = `We are proud to invite Solana's #1 Chiweenie into our hearts and wallets #ChadsBestFriend 🐶 
-Spread the word far and wide, finding more happy forever homes for more ugly, unwanted Tunas. 
-Use /supermeme to share your best Tunas to win millions of $TUNA from weekly Tuna Tuesday giveaways!`;
+const WHY_THIS_COIN_DESC_1 = `Embrace $ROCKWIFHAT and join the journey of sophistication. Prepare for a stylish ascent to the pinnacle of crypto fashion; $ROCKWIFHAT is leading the way!
+Engage with fellow connoisseurs in our Telegram and on X/Twitter Spaces, comparing the most fashionable rock formations and hat styles.`;
 
+const WHY_THIS_COIN_DESC_2 = `$ROCKWIFHAT officially debuts with flair on Dec. 30, 2023 in honor of the stoic stone with the holy hat. 
+Holders of $ROCKWIFHAT are privileged to exclusive 'Chic Pebbles' NFT drops, created by our in-house, avant-garde NFT artist. Don't forget the irresistibly sophisticated '/meme' command on Telegram, and much more in the pipeline.`;
+
+const WHY_THIS_COIN_DESC_3 = `Holders take pride in welcoming the most stylish rock in the crypto world into our hearts and wallets. 
+Tell everyone you know about the handsome chic flair of $ROCKWIFHAT. Spread it far and wide, and attract admirers for our favorite embodiment of hard elegance and dull wit. 
+Use "/meme" in the Telegram to flaunt your finest $ROCKWIFHAT inspirations. You can win one million $ROCKWIFHAT from our weekly 'Top Hat Tuesday' contests which are managed entirely by the AI-powered RockWifHat bot! See it in action in our Telegram group.`;
 
 
 class Media_container extends React.Component {

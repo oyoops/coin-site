@@ -12,7 +12,7 @@ class Header_top extends React.Component {
     const TOKEN_ADDRESS = process.env.REACT_APP_TOKEN_ADDRESS;
     const TOKEN_TWITTER_USERNAME = process.env.REACT_APP_TOKEN_TWITTER_USERNAME;
     const TOKEN_TELEGRAM_GROUP_URL = process.env.REACT_APP_TOKEN_TELEGRAM_GROUP_URL;
-    const TOKEN_DAPP_PAGE_NAME = "App";
+    const TOKEN_DAPP_PAGE_NAME = "dApp";
     const TOKEN_BUY_LINK_TEXT = "Buy";
 
     return (

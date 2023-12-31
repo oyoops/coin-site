@@ -2,23 +2,23 @@ import React from "react";
 import background6 from "./images/background-item-6.svg";
 import background7 from "./images/background-item-7.svg";
 
-const TOKENOMICS_SECTION_TITLE = `Tuna Tokenomics`;
+const TOKENOMICS_SECTION_TITLE = `Tokenomics`;
 const TOKENOMICS_SECTION_SUBTITLE = `Distribution`;
 
-const TOKENOMICS_SECTION_TOTAL_SUPPLY_TITLE = `Tuna Supply`;
+const TOKENOMICS_SECTION_TOTAL_SUPPLY_TITLE = `$ROCKWIFHAT Supply`;
 const TOKENOMICS_SECTION_TOTAL_SUPPLY_VALUE = `1 Bil.`;
 
-const TOKENOMICS_SECTION_LOT_1_TITLE = `Airdrop`;
-const TOKENOMICS_SECTION_LOT_1_VALUE = `75%`;
+const TOKENOMICS_SECTION_LOT_1_TITLE = `AI Contest Awards (weekly)`;
+const TOKENOMICS_SECTION_LOT_1_VALUE = `10%`;
 
 const TOKENOMICS_SECTION_LOT_2_TITLE = `Marketing`;
-const TOKENOMICS_SECTION_LOT_2_VALUE = `3%`;
+const TOKENOMICS_SECTION_LOT_2_VALUE = `5%`;
 
 const TOKENOMICS_SECTION_LOT_3_TITLE = `Team`;
-const TOKENOMICS_SECTION_LOT_3_VALUE = `9%`;
+const TOKENOMICS_SECTION_LOT_3_VALUE = `5%`;
 
-const TOKENOMICS_SECTION_LOT_4_TITLE = `Burnt Liquidity`;
-const TOKENOMICS_SECTION_LOT_4_VALUE = `13%`;
+const TOKENOMICS_SECTION_LOT_4_TITLE = `Liquidity Burn`;
+const TOKENOMICS_SECTION_LOT_4_VALUE = `75% + 5%`;
 const TOKENOMICS_SECTION_LOT_4_SUBTEXT = `Raydium`;
 
 
