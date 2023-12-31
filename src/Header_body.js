@@ -5,10 +5,7 @@ import {Link as LinkR} from 'react-scroll';
 import Claim from "./images/claim-coin.svg";
 import Typical from 'react-typical';
 import axios from 'axios';
-//import { motion } from 'framer-motion';
-
 import './css/AppStyles.css'; // custom CSS
-
 
 const BIRDEYE_API_KEY = process.env.REACT_APP_BIRDEYE_API_KEY;
 const TOKEN_CIRCULATING_SUPPLY = parseFloat(process.env.REACT_APP_TOKEN_CIRCULATING_SUPPLY); // 9950000000 = 1 billion
