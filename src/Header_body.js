@@ -20,7 +20,7 @@ const MAIN_SLOGAN_P2 = `$ROCKWIFHAT is making its grand debut!`;
 const MAIN_SLOGAN_DEXSCREENER_LINK_TEXT = "DEXScreener";
 const MAIN_SLOGAN_P3 = `Add some rock-solid elegance to your portfolio.`;
 
-const MAIN_SLOGAN_HOOK = `🪨 + 🎩 + AI 🧠 = 💎`;
+const MAIN_SLOGAN_HOOK = `🪨+🎩+🧠AI = 💎`;
 
 
 class Header_body extends React.Component {
