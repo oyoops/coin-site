@@ -9,9 +9,9 @@ const COIN_LONG_DESCRIPTION_SECTION_DESC_P2 = `RockWifHat's journey is a tale of
 const COIN_LONG_DESCRIPTION_SECTION_DESC_P3 = `In today's world where ordinary rocks are too often overlooked, RockWifHat stands out with its exquisite, regal top hat. This isn't just a rock, nor is it just a rock with a hat; $ROCKWIFHAT is a bona fide fashion statement - a symbol of enduring grace amidst the turbulent Solana landscape of jeets and rugs. This rock, however, is rock-solid (and has great fashion). ETH maxis may scoff, but aficionados know: $ROCKWIFHAT is more than a token. This is the beginning of a worldwide movement to ensure that overlooked inanimate objects everywhere deserve to be WIF HAT just as much (if not more than) as our pets.`;
 
 const COIN_LONG_DESCRIPTION_SECTION_BULLET_1_TEXT = `AI-Powered RockWifHat Telegram Bot`;
-const COIN_LONG_DESCRIPTION_SECTION_BULLET_2_TEXT = `'Chic Pebbles' NFTs Under Development.`;
+const COIN_LONG_DESCRIPTION_SECTION_BULLET_2_TEXT = `NFTs Already In Development.`;
 const COIN_LONG_DESCRIPTION_SECTION_BULLET_3_TEXT = `Rocks Don't Normally Wear Hats.`;
-const COIN_LONG_DESCRIPTION_SECTION_BULLET_4_TEXT = `Rocky Wears a Top Hat (#1 Hat Variety).`;
+const COIN_LONG_DESCRIPTION_SECTION_BULLET_4_TEXT = `Rocky Wears a Top Hat.`;
 
 const COIN_LONG_DESCRIPTION_SECTION_GO_TO_TOKENOMICS_BUTTON_TEXT = `Tokenomics`;
 
