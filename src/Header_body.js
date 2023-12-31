@@ -1,6 +1,7 @@
 import React from "react";
 import chevronRight from "./images/chevron-right.svg";
 import coin from "./images/coin-rocket.svg";
+import animated_coin from "./images/logo.png";
 import {Link as LinkR} from 'react-scroll';
 import Claim from "./images/claim-coin.svg";
 import Typical from 'react-typical';
@@ -12,12 +13,12 @@ const TOKEN_CIRCULATING_SUPPLY = parseFloat(process.env.REACT_APP_TOKEN_CIRCULAT
 
 const TOKEN_ADDRESS = process.env.REACT_APP_TOKEN_ADDRESS;
 
-const MAIN_SLOGAN_P1 = `Then it's the prime time to embrace $ROCKWIFHAT - the rock-solid investment with the dapper hat. The rock women can't keep their hands off the rich and handsome Rocky.`;
+const MAIN_SLOGAN_P1 = `Then it's the prime time to embrace $ROCKWIFHAT - the rock-solid investment wearing a rich, firm top-hat. The rock women can't keep their hands off the rich and handsome Rocky.`;
 const MAIN_SLOGAN_P2 = `$ROCKWIFHAT is making its grand debut!`;
 const MAIN_SLOGAN_DEXSCREENER_LINK_TEXT = "DEXScreener";
 const MAIN_SLOGAN_P3 = `Add some rock-solid elegance to your portfolio.`;
 
-const MAIN_SLOGAN_HOOK = `🪨+🎩+🧠AI = 💎`;
+const MAIN_SLOGAN_HOOK = `(🪨,🎩)`;
 
 
 class Header_body extends React.Component {
@@ -48,25 +49,12 @@ class Header_body extends React.Component {
           marketCap: marketCapValue.toLocaleString('en-US', { style: 'currency', currency: 'USD' }) // Format as currency
         });
     
-        /*
-        // New API call for holder count
-        axios.get('API_ENDPOINT')
-          .then((holderResponse) => {
-            const holderCount = holderResponse.data.holderCount;
-            this.setState({ holderCount });
-          })
-          .catch((holderError) => {
-            console.error(holderError);
-            this.setState({ holderCount: 'Unavailable' });
-          });
-        */
-    
       })
       .catch((error) => {
         console.error(error);
         this.setState({ 
-          price: 'Launching TONIGHT!',
-          marketCap: 'Launching TONIGHT!'
+          price: 'Launch Time:',
+          marketCap: '1/1/24 1:11 PM EST'
         });
       });
   }
@@ -95,7 +83,7 @@ class Header_body extends React.Component {
           <div className="value-proposition">
             
             {/* MAIN TOKEN IMAGE */}
-            <embed src={coin} className="token_logo"/> 
+            <embed src={animated_coin} className="token_logo"/> 
             {/*<embed src={coin} className="token_logo" style={tokenLogoStyle} />*/}
 
             {/* WISH YOU GOT INTO ____ ? */}
@@ -107,6 +95,7 @@ class Header_body extends React.Component {
               /> early?</p>
 
             {/* GREAT, BECAUSE... */}
+
             <p>
               {`${MAIN_SLOGAN_P1}`}
             </p>

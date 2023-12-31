@@ -1,7 +1,7 @@
 /* Style for the container holding the SVG */
 .logo {
-    width: 200px; /* Adjust as needed */
-    height: 200px; /* Adjust as needed */
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
     position: relative; /* Needed for absolute positioning of child elements */
   }
   
