@@ -18,7 +18,7 @@ const ROADMAP_YELLOW_TITLE = `Just Around the Hat`;
 const ROADMAP_YELLOW_ITEM_1 = `NFTs by In-House NFT Artist`;
 const ROADMAP_YELLOW_ITEM_2 = `CMC & CoinGecko Listings`;
 const ROADMAP_YELLOW_ITEM_3 = `'Top Hat Tuesday' Giveaways`;
-const ROADMAP_YELLOW_ITEM_4 = `BirdEye/Dextools Enhanced Info`;
+const ROADMAP_YELLOW_ITEM_4 = `Enhanced BirdEye/Dextools`;
 
 // RED:
 const ROADMAP_RED_TITLE = `Stone's Throw Away`;

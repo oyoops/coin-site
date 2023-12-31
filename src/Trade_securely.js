@@ -35,7 +35,7 @@ class Trade_securely extends React.Component {
           </p>
           <a href="https://phantom.app/" nofollow="true" target="_blank" rel="noreferrer">
           <button className="btn btn--flex btn--accent">
-            <span className="text--standart text--medium text-bold">New Wallet</span>
+            <span className="text--standart text--medium text-bold">Phantom</span>
             <div className="chiron-icon-container">
               <img src={ChevronRight} alt="Right Icon" />
             </div>
@@ -47,11 +47,11 @@ class Trade_securely extends React.Component {
             <img alt="SOL" src={BNB} />
           </div>
           <div className="card__header">
-            <h3>Send Solana to Phantom</h3>
+            <h3>Send SOL to Wallet</h3>
           </div>
           <p className="text text-small text--regular card__text">
             You can buy SOL from Coinbase or another exchange, then send it directly to your Phantom public address.
-            Once it arrives (few minutes, if using Coinbase), you can use Phantom's browser tab to visit a DEX (decentralized exchange) to swap SOL for the $ROCKWIFHAT contract address.
+            Once it arrives, use Phantom's browser tab to visit Raydium where you can swap SOL for $ROCKWIFHAT.
           </p>
         </div>
         <div className="card card--white">
@@ -65,29 +65,27 @@ class Trade_securely extends React.Component {
             Raydium is Solana's most popular DeFi protocol. 
             It allows you to easily swap SOL or any other Solana token for $ROCKWIFHAT.
           </p>
-          <a href="https://raydium.io/" nofollow="true" target="_blank" rel="noreferrer">
+          {/*<a href="https://raydium.io/" nofollow="true" target="_blank" rel="noreferrer">
           <button className="btn btn--flex btn--accent">
             <span className="text--standart text--medium text-bold">Raydium</span>
             <div className="chiron-icon-container">
               <img src={ChevronRight} alt="Right Icon" />
             </div>
           </button>
-          </a>
+          </a>*/}
         </div>
         <div className="card card--white">
           <div className="currency-icon2">
             <img alt="Swap TUNA" src={SwapECAT} />
           </div>
           <div className="card__header">
-            <h3>Trade Solana for RockWifHat</h3>
+            <h3>Get RockWifHat</h3>
           </div>
           <p className="text text-small text--regular card__text">
-            You can start swapping as soon as you have SOL available!
-            Copy the $ROCKWIFHAT token address from the top of the page. Then, on Raydium, tap ‘Select a token’ on the second token input field and paste the $ROCKWIFHAT address.
-            LASTLY, TYPE OVER 9000 SOL AND PRESS 'SWAP'!
+            Copy token address from the top of this page. Then, on Raydium, tap ‘Select a token’ and paste.
           </p>
           <button className="btn btn--flex btn--accent">
-            <span className="text--standart text--medium text-bold">$ROCKWIFHAT: It's a Movement.</span>
+            <span className="text--standart text--medium text-bold">Buy Now</span>
             <div className="chiron-icon-container">
               <img src={ChevronRight} alt="Right Icon" />
             </div>

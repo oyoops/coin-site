@@ -3,11 +3,11 @@ import Me from "./images/me_pic.png";
 import {TwitterFollowButton} from "react-twitter-embed";
 
 
-const TEAM_SECTION_TITLE = `RockWifHat's Top Supporter`;
+const TEAM_SECTION_TITLE = `Team`;
 
 const TEAM_LEAD_NAME = `Snazzy Boggins`;
-const TEAM_LEAD_ROLES_DESCRIPTION_LINE_1 = `Roles: Polisher of Stone. Cleaner of Hats. Maker of RockWifHat AI memebot/chatbot.`;
-const TEAM_LEAD_ROLES_DESCRIPTION_LINE_2 = `The other team members rock, too; but they can go kick rocks. I, Snazzy Boggins, am Rocky's top (hat) supporter!`;
+const TEAM_LEAD_ROLES_DESCRIPTION_LINE_1 = `Roles:`;
+const TEAM_LEAD_ROLES_DESCRIPTION_LINE_2 = `Dev. Polisher of Stone. Cleaner of Hats. Maker of Memebot. etc.`;
 
 
 class Team extends React.Component {
