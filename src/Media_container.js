@@ -3,9 +3,9 @@ import Rocket from "./images/rocket3.svg";
 import Coins from "./images/coins.svg";
 import Vote from "./images/vote.svg";
 
-const WHY_THIS_COIN_TITLE_1 = `MEET $ROCKWIFHAT TODAY`;
-const WHY_THIS_COIN_TITLE_2 = `INVEST ROCK-SOLID(LY)`;
-const WHY_THIS_COIN_TITLE_3 = `SPREAD THE WIFHAT WORD`;
+const WHY_THIS_COIN_TITLE_1 = `BUY $ROCKWIFHAT`;
+const WHY_THIS_COIN_TITLE_2 = `IT'S ROCK SOLID`;
+const WHY_THIS_COIN_TITLE_3 = `TELL YOUR FRIENDS`;
 
 const WHY_THIS_COIN_DESC_1 = `Embrace $ROCKWIFHAT and join the journey of sophistication. Prepare for a stylish ascent to the pinnacle of crypto fashion; $ROCKWIFHAT is leading the way!
 Engage with fellow connoisseurs in our Telegram and on X/Twitter Spaces, comparing the most fashionable rock formations and hat styles.`;
