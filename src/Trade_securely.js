@@ -51,9 +51,7 @@ class Trade_securely extends React.Component {
           </div>
           <p className="text text-small text--regular card__text">
           You can buy SOL from Coinbase or another exchange, then send it directly to your Phantom public address.
-          Once it arrives (few minutes, if using Coinbase), you can use Phantom's browser tab to visit a DEX (decentralized exchange) to swap SOL for any Solana token.
-          The most popular DEX on Solana is Raydium. But give Jup.ag a try, too! You'll thank me profusely in six months after the $JUP airdrop.
-          Never send SOL *to* a token's contract address! Interact with DEXes to engage in DeFi.
+          Once it arrives (few minutes, if using Coinbase), you can use Phantom's browser tab to visit a DEX (decentralized exchange) to swap SOL for the $ROCKWIFHAT contract address.
           </p>
         </div>
         <div className="card card--white">
