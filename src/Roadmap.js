@@ -4,7 +4,7 @@ import React from "react";
 
 // ROADMAP:
 const ROADMAP_SECTION_TITLE = `Roadmap`;
-const ROADMAP_SECTION_INTRODUCTION = `Charting RockWifHat's journey forward, tentatively:`;
+const ROADMAP_SECTION_INTRODUCTION = `Charting RockWifHat's journey forward (tentatively):`;
 
 // GREEN:
 const ROADMAP_GREEN_TITLE = `Rocking & Rolling`;
@@ -15,17 +15,17 @@ const ROADMAP_GREEN_ITEM_4 = `Social Media`;
 
 // YELLOW:
 const ROADMAP_YELLOW_TITLE = `Just Around the Hat`;
-const ROADMAP_YELLOW_ITEM_1 = `NFTs by In-House NFT Artist`;
+const ROADMAP_YELLOW_ITEM_1 = `NFTs by In-House Artist`;
 const ROADMAP_YELLOW_ITEM_2 = `CMC & CoinGecko Listings`;
 const ROADMAP_YELLOW_ITEM_3 = `'Top Hat Tuesday' Giveaways`;
 const ROADMAP_YELLOW_ITEM_4 = `Enhanced BirdEye/Dextools`;
 
 // RED:
 const ROADMAP_RED_TITLE = `Stone's Throw Away`;
-const ROADMAP_RED_ITEM_1 = `NFT Airdrop to Holders`;
-const ROADMAP_RED_ITEM_2 = `AI Social Utility 2.0 (Big)`;
+const ROADMAP_RED_ITEM_1 = `AI Social Utility 2.0 (Big)`;
+const ROADMAP_RED_ITEM_2 = `NFT Airdrop to Holders`;
 const ROADMAP_RED_ITEM_3 = `CEX Listing`;
-const ROADMAP_RED_ITEM_4 = `Top Hat & Pet Rock Merch`;
+const ROADMAP_RED_ITEM_4 = `Top Hat/Pet Rock Merch`;
 
 
 class Roadmap extends React.Component {
