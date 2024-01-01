@@ -15,9 +15,9 @@ const TOKEN_ADDRESS = process.env.REACT_APP_TOKEN_ADDRESS;
 
 //const MAIN_SLOGAN_P1 = `Then meet RockWifHat, the rock-solid investment wearing a rich, firm top-hat.`;
 const MAIN_SLOGAN_P1 = `RockWifHat (a.k.a. Rocky), the first rock in world history to don a top hat, and his beautiful wife, Roxanne, promise holders with the long-term sturdiness of ROCK 🪨, the swag and chic of TOP HAT 🎩, and AI.`;
-const MAIN_SLOGAN_P2 = `Ready to add a rock-solid - and highly fashionable - investment to your portfolio? $ROCKWIFHAT makes its grand debut on 1/1/2024 at 1:11 PM EST (UTC: 6:11 PM)`;
+const MAIN_SLOGAN_P2 = `Ready to add a rock-solid - and highly fashionable - investment to your portfolio?`;
 const MAIN_SLOGAN_DEXSCREENER_LINK_TEXT = "DEXScreener";
-const MAIN_SLOGAN_P3 = `Get hard!`;
+const MAIN_SLOGAN_P3 = `Launching January 1, 2024 at 3 PM EST (8 PM UTC)`;
 
 const MAIN_SLOGAN_HOOK = `(🪨,🎩)`;
 
@@ -54,8 +54,8 @@ class Header_body extends React.Component {
       .catch((error) => {
         console.error(error);
         this.setState({ 
-          price: 'Launch Time:',
-          marketCap: '1/1/24 1:11 PM EST'
+          price: ' -',
+          marketCap: 'Launching soon...'
         });
       });
   }
