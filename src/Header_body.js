@@ -150,7 +150,7 @@ class Header_body extends React.Component {
                   Market cap:
                 </span>
                 <span className="text text--small text--regular text--white badge-hold2">
-                  ${`${this.state.marketCap}`}
+                  {`${this.state.marketCap}`}
                 </span>
             </div>
 
