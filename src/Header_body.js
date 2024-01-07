@@ -17,7 +17,7 @@ const TOKEN_ADDRESS = process.env.REACT_APP_TOKEN_ADDRESS;
 const MAIN_SLOGAN_P1 = `RockWifHat (a.k.a. Rocky) was the first rock in world history to don a top hat. He promises holders with the long-term sturdiness of ROCK 🪨, the swag and chic of TOP HAT 🎩, and AI.`;
 const MAIN_SLOGAN_P2 = `Ready to add a rock-solid and highly fashionable investment to your portfolio?`;
 const MAIN_SLOGAN_DEXSCREENER_LINK_TEXT = "DEXScreener";
-const MAIN_SLOGAN_P3 = `Just launched!`;
+const MAIN_SLOGAN_P3 = `Play Flappy Rock!`;
 
 const MAIN_SLOGAN_HOOK = `(🪨,🎩)`;
 
